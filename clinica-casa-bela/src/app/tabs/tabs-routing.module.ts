@@ -49,3 +49,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
 })
 export class TabsPageRoutingModule {}
+export { TabsPage };
+
