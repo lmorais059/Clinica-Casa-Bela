@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title>
      Login
     </ion-title>
@@ -21,6 +24,9 @@
       <ion-label position="floating">Senha</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-    <ion-button expand="block" (click)="login()">Entrar</ion-button>
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-button expand="block" (click)="login()">Entrar</ion-button> 
+  <div class="forgot-password">
+    <a (click)="forgotPassword()">Esqueceu a senha?</a> </div>
+  <div class="social-login">
+    <ion-button expand="block" (click)="cadastrar()">Cadastrar</ion-button> </div>
 </ion-content>

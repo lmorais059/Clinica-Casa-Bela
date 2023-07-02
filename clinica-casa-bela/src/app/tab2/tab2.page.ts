@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 
+
+
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -19,6 +21,15 @@ login() {
   this.router.navigate(['/tabs/tab1']);
 
   }
+cadastrar() {
+    // Lógica para autenticação e validação do formulário de cadastro
+  
+    this.router.navigate(['/tabs/tab4']);
+  }
+  forgotPassword() {
+    this.router.navigateByUrl('/tabs/tab5');
+  }
+  
 }
 
 
